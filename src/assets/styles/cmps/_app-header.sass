@@ -1,0 +1,31 @@
+.app-header
+  display: flex
+  justify-content: space-between
+
+  font-size: 1.5rem
+  font-weight: bold
+
+  background: #38375f
+  color: #fff
+
+  .app-logo
+    @include headerHover
+    padding: 15px
+
+  .main-nav
+    flex: 50% 0 1
+    display: flex
+
+    .nav-links
+      display: flex
+      align-items: center
+      flex-grow: 1
+      height: 100%
+
+      .nav-link a
+        @include headerHover
+        padding: 15px
+        width: 100%
+        
+        &.active
+          background: #615e8f83
